@@ -3,7 +3,11 @@
 # download data
 module load sratoolkit/2.9.6-1
 prefetch --option-file /home/people/tuhu/Downloads/SRR_Acc_List.txt
-fastq-dump --gzip /home/projects/ku_00015/data/sratool_data/sra/SRR8052*.sra # convert sra file to fastq file
+
+# download data
+cd /home/projects/ku_00015/data/sratool_data/sra
+module load parallel/20200522 sratoolkit/2.9.6-1
+cat /home/people/tuhu/Downloads/SRR_Acc_List.txt | parallel "fasterq-dump /home/projects/ku_00015/data/sratool_data/sra/{}.sra"
 
 # load module
 echo "Step 0 - Load modules".
