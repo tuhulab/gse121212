@@ -1,0 +1,1217 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.6.2
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 147 SAM files                                    ||
+||                           P SRR8052708.sra.bam                             ||
+||                           P SRR8052709.sra.bam                             ||
+||                           P SRR8052710.sra.bam                             ||
+||                           P SRR8052711.sra.bam                             ||
+||                           P SRR8052712.sra.bam                             ||
+||                           P SRR8052713.sra.bam                             ||
+||                           P SRR8052714.sra.bam                             ||
+||                           P SRR8052715.sra.bam                             ||
+||                           P SRR8052716.sra.bam                             ||
+||                           P SRR8052717.sra.bam                             ||
+||                           P SRR8052718.sra.bam                             ||
+||                           P SRR8052719.sra.bam                             ||
+||                           P SRR8052720.sra.bam                             ||
+||                           P SRR8052721.sra.bam                             ||
+||                           P SRR8052722.sra.bam                             ||
+||                           P SRR8052723.sra.bam                             ||
+||                           P SRR8052724.sra.bam                             ||
+||                           P SRR8052725.sra.bam                             ||
+||                           P SRR8052726.sra.bam                             ||
+||                           P SRR8052727.sra.bam                             ||
+||                           P SRR8052728.sra.bam                             ||
+||                           P SRR8052729.sra.bam                             ||
+||                           P SRR8052730.sra.bam                             ||
+||                           P SRR8052731.sra.bam                             ||
+||                           P SRR8052732.sra.bam                             ||
+||                           P SRR8052733.sra.bam                             ||
+||                           P SRR8052734.sra.bam                             ||
+||                           P SRR8052735.sra.bam                             ||
+||                           P SRR8052736.sra.bam                             ||
+||                           P SRR8052737.sra.bam                             ||
+||                           P SRR8052738.sra.bam                             ||
+||                           P SRR8052739.sra.bam                             ||
+||                           P SRR8052740.sra.bam                             ||
+||                           P SRR8052741.sra.bam                             ||
+||                           P SRR8052742.sra.bam                             ||
+||                           P SRR8052743.sra.bam                             ||
+||                           P SRR8052744.sra.bam                             ||
+||                           P SRR8052745.sra.bam                             ||
+||                           P SRR8052746.sra.bam                             ||
+||                           P SRR8052747.sra.bam                             ||
+||                           P SRR8052748.sra.bam                             ||
+||                           P SRR8052749.sra.bam                             ||
+||                           P SRR8052750.sra.bam                             ||
+||                           P SRR8052751.sra.bam                             ||
+||                           P SRR8052752.sra.bam                             ||
+||                           P SRR8052753.sra.bam                             ||
+||                           P SRR8052754.sra.bam                             ||
+||                           P SRR8052755.sra.bam                             ||
+||                           P SRR8052756.sra.bam                             ||
+||                           P SRR8052757.sra.bam                             ||
+||                           P SRR8052758.sra.bam                             ||
+||                           P SRR8052759.sra.bam                             ||
+||                           P SRR8052760.sra.bam                             ||
+||                           P SRR8052761.sra.bam                             ||
+||                           P SRR8052762.sra.bam                             ||
+||                           P SRR8052763.sra.bam                             ||
+||                           P SRR8052764.sra.bam                             ||
+||                           P SRR8052765.sra.bam                             ||
+||                           P SRR8052766.sra.bam                             ||
+||                           P SRR8052767.sra.bam                             ||
+||                           P SRR8052768.sra.bam                             ||
+||                           P SRR8052769.sra.bam                             ||
+||                           P SRR8052770.sra.bam                             ||
+||                           P SRR8052771.sra.bam                             ||
+||                           P SRR8052772.sra.bam                             ||
+||                           P SRR8052773.sra.bam                             ||
+||                           P SRR8052774.sra.bam                             ||
+||                           P SRR8052775.sra.bam                             ||
+||                           P SRR8052776.sra.bam                             ||
+||                           P SRR8052777.sra.bam                             ||
+||                           P SRR8052778.sra.bam                             ||
+||                           P SRR8052779.sra.bam                             ||
+||                           P SRR8052780.sra.bam                             ||
+||                           P SRR8052781.sra.bam                             ||
+||                           P SRR8052782.sra.bam                             ||
+||                           P SRR8052783.sra.bam                             ||
+||                           P SRR8052784.sra.bam                             ||
+||                           P SRR8052785.sra.bam                             ||
+||                           P SRR8052786.sra.bam                             ||
+||                           P SRR8052787.sra.bam                             ||
+||                           P SRR8052788.sra.bam                             ||
+||                           P SRR8052789.sra.bam                             ||
+||                           P SRR8052790.sra.bam                             ||
+||                           P SRR8052791.sra.bam                             ||
+||                           P SRR8052792.sra.bam                             ||
+||                           P SRR8052793.sra.bam                             ||
+||                           P SRR8052794.sra.bam                             ||
+||                           P SRR8052795.sra.bam                             ||
+||                           P SRR8052796.sra.bam                             ||
+||                           P SRR8052797.sra.bam                             ||
+||                           P SRR8052798.sra.bam                             ||
+||                           P SRR8052799.sra.bam                             ||
+||                           P SRR8052800.sra.bam                             ||
+||                           P SRR8052801.sra.bam                             ||
+||                           P SRR8052802.sra.bam                             ||
+||                           P SRR8052803.sra.bam                             ||
+||                           P SRR8052804.sra.bam                             ||
+||                           P SRR8052805.sra.bam                             ||
+||                           P SRR8052806.sra.bam                             ||
+||                           P SRR8052807.sra.bam                             ||
+||                           P SRR8052808.sra.bam                             ||
+||                           P SRR8052809.sra.bam                             ||
+||                           P SRR8052810.sra.bam                             ||
+||                           P SRR8052811.sra.bam                             ||
+||                           P SRR8052812.sra.bam                             ||
+||                           P SRR8052813.sra.bam                             ||
+||                           P SRR8052814.sra.bam                             ||
+||                           P SRR8052815.sra.bam                             ||
+||                           P SRR8052816.sra.bam                             ||
+||                           P SRR8052817.sra.bam                             ||
+||                           P SRR8052818.sra.bam                             ||
+||                           P SRR8052819.sra.bam                             ||
+||                           P SRR8052820.sra.bam                             ||
+||                           P SRR8052821.sra.bam                             ||
+||                           P SRR8052822.sra.bam                             ||
+||                           P SRR8052823.sra.bam                             ||
+||                           P SRR8052824.sra.bam                             ||
+||                           P SRR8052825.sra.bam                             ||
+||                           P SRR8052826.sra.bam                             ||
+||                           P SRR8052827.sra.bam                             ||
+||                           P SRR8052828.sra.bam                             ||
+||                           P SRR8052829.sra.bam                             ||
+||                           P SRR8052830.sra.bam                             ||
+||                           P SRR8052831.sra.bam                             ||
+||                           P SRR8052832.sra.bam                             ||
+||                           P SRR8052833.sra.bam                             ||
+||                           P SRR8052834.sra.bam                             ||
+||                           P SRR8052835.sra.bam                             ||
+||                           P SRR8052836.sra.bam                             ||
+||                           P SRR8052837.sra.bam                             ||
+||                           P SRR8052838.sra.bam                             ||
+||                           P SRR8052839.sra.bam                             ||
+||                           P SRR8052840.sra.bam                             ||
+||                           P SRR8052841.sra.bam                             ||
+||                           P SRR8052842.sra.bam                             ||
+||                           P SRR8052843.sra.bam                             ||
+||                           P SRR8052844.sra.bam                             ||
+||                           P SRR8052845.sra.bam                             ||
+||                           P SRR8052846.sra.bam                             ||
+||                           P SRR8052847.sra.bam                             ||
+||                           P SRR8052848.sra.bam                             ||
+||                           P SRR8052849.sra.bam                             ||
+||                           P SRR8052850.sra.bam                             ||
+||                           P SRR8052851.sra.bam                             ||
+||                           P SRR8052852.sra.bam                             ||
+||                           P SRR8052853.sra.bam                             ||
+||                           P SRR8052854.sra.bam                             ||
+||                                                                            ||
+||             Output file : counts.txt                                       ||
+||                 Summary : counts.txt.summary                               ||
+||              Annotation : gencode.v34.annotation.gtf (GTF)                 ||
+||      Dir for temp files : /home/projects/ku_00015/people/tuhu/gse12121 ... ||
+||                                                                            ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file gencode.v34.annotation.gtf ...                        ||
+||    Features : 1378888                                                      ||
+||    Meta-features : 60591                                                   ||
+||    Chromosomes/contigs : 25                                                ||
+||                                                                            ||
+|| Process SAM file SRR8052708.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 53490834                                                  ||
+||    Successfully assigned reads : 17964593 (33.6%)                          ||
+||    Running time : 0.65 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052709.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 85749333                                                  ||
+||    Successfully assigned reads : 22627894 (26.4%)                          ||
+||    Running time : 1.09 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052710.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 122695577                                                 ||
+||    Successfully assigned reads : 39557858 (32.2%)                          ||
+||    Running time : 1.58 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052711.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 132526959                                                 ||
+||    Successfully assigned reads : 35481753 (26.8%)                          ||
+||    Running time : 1.66 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052712.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 88426322                                                  ||
+||    Successfully assigned reads : 26169989 (29.6%)                          ||
+||    Running time : 1.10 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052713.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 101549187                                                 ||
+||    Successfully assigned reads : 26122646 (25.7%)                          ||
+||    Running time : 1.21 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052714.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 80609254                                                  ||
+||    Successfully assigned reads : 27588193 (34.2%)                          ||
+||    Running time : 0.97 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052715.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 73894813                                                  ||
+||    Successfully assigned reads : 12774048 (17.3%)                          ||
+||    Running time : 0.88 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052716.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 96692523                                                  ||
+||    Successfully assigned reads : 30633906 (31.7%)                          ||
+||    Running time : 1.19 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052717.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 97488494                                                  ||
+||    Successfully assigned reads : 29915166 (30.7%)                          ||
+||    Running time : 1.38 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052718.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 76112522                                                  ||
+||    Successfully assigned reads : 34645034 (45.5%)                          ||
+||    Running time : 0.90 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052719.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 69866308                                                  ||
+||    Successfully assigned reads : 25936575 (37.1%)                          ||
+||    Running time : 0.79 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052720.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 45987231                                                  ||
+||    Successfully assigned reads : 19877195 (43.2%)                          ||
+||    Running time : 0.51 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052721.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 66731231                                                  ||
+||    Successfully assigned reads : 27883435 (41.8%)                          ||
+||    Running time : 0.84 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052722.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 103518854                                                 ||
+||    Successfully assigned reads : 46145830 (44.6%)                          ||
+||    Running time : 1.35 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052723.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 71361165                                                  ||
+||    Successfully assigned reads : 30855626 (43.2%)                          ||
+||    Running time : 0.89 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052724.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 90938349                                                  ||
+||    Successfully assigned reads : 37570589 (41.3%)                          ||
+||    Running time : 1.11 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052725.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 93736629                                                  ||
+||    Successfully assigned reads : 34040094 (36.3%)                          ||
+||    Running time : 1.17 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052726.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 80774196                                                  ||
+||    Successfully assigned reads : 38698036 (47.9%)                          ||
+||    Running time : 1.03 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052727.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 65735742                                                  ||
+||    Successfully assigned reads : 30868160 (47.0%)                          ||
+||    Running time : 0.86 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052728.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 82113314                                                  ||
+||    Successfully assigned reads : 21815738 (26.6%)                          ||
+||    Running time : 0.97 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052729.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 81487810                                                  ||
+||    Successfully assigned reads : 25572899 (31.4%)                          ||
+||    Running time : 1.01 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052730.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 77060206                                                  ||
+||    Successfully assigned reads : 19717551 (25.6%)                          ||
+||    Running time : 0.95 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052731.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 102354889                                                 ||
+||    Successfully assigned reads : 24612335 (24.0%)                          ||
+||    Running time : 1.24 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052732.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 104033484                                                 ||
+||    Successfully assigned reads : 32711337 (31.4%)                          ||
+||    Running time : 1.26 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052733.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 131670606                                                 ||
+||    Successfully assigned reads : 46721739 (35.5%)                          ||
+||    Running time : 1.73 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052734.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 74968439                                                  ||
+||    Successfully assigned reads : 36323692 (48.5%)                          ||
+||    Running time : 0.95 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052735.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 84657443                                                  ||
+||    Successfully assigned reads : 31526763 (37.2%)                          ||
+||    Running time : 1.04 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052736.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 103260813                                                 ||
+||    Successfully assigned reads : 32321646 (31.3%)                          ||
+||    Running time : 1.31 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052737.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 83520943                                                  ||
+||    Successfully assigned reads : 21268373 (25.5%)                          ||
+||    Running time : 1.04 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052738.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 89612191                                                  ||
+||    Successfully assigned reads : 40887535 (45.6%)                          ||
+||    Running time : 1.09 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052739.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 66227657                                                  ||
+||    Successfully assigned reads : 26393882 (39.9%)                          ||
+||    Running time : 0.79 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052740.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 49490049                                                  ||
+||    Successfully assigned reads : 15839947 (32.0%)                          ||
+||    Running time : 0.61 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052741.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 64334453                                                  ||
+||    Successfully assigned reads : 20021547 (31.1%)                          ||
+||    Running time : 0.88 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052742.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 72556740                                                  ||
+||    Successfully assigned reads : 29343103 (40.4%)                          ||
+||    Running time : 0.86 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052743.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 69566437                                                  ||
+||    Successfully assigned reads : 29939610 (43.0%)                          ||
+||    Running time : 0.93 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052744.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 83877281                                                  ||
+||    Successfully assigned reads : 27194629 (32.4%)                          ||
+||    Running time : 1.02 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052745.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 98780070                                                  ||
+||    Successfully assigned reads : 27696407 (28.0%)                          ||
+||    Running time : 1.31 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052746.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 43286581                                                  ||
+||    Successfully assigned reads : 13103504 (30.3%)                          ||
+||    Running time : 0.54 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052747.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 92880493                                                  ||
+||    Successfully assigned reads : 33962542 (36.6%)                          ||
+||    Running time : 1.20 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052748.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 78237859                                                  ||
+||    Successfully assigned reads : 39016757 (49.9%)                          ||
+||    Running time : 1.01 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052749.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 47798988                                                  ||
+||    Successfully assigned reads : 22725952 (47.5%)                          ||
+||    Running time : 0.62 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052750.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 78321814                                                  ||
+||    Successfully assigned reads : 32101071 (41.0%)                          ||
+||    Running time : 1.04 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052751.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 75012355                                                  ||
+||    Successfully assigned reads : 28662535 (38.2%)                          ||
+||    Running time : 0.96 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052752.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 75404217                                                  ||
+||    Successfully assigned reads : 30115438 (39.9%)                          ||
+||    Running time : 1.04 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052753.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 78906067                                                  ||
+||    Successfully assigned reads : 36401023 (46.1%)                          ||
+||    Running time : 1.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052754.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 89693466                                                  ||
+||    Successfully assigned reads : 27709942 (30.9%)                          ||
+||    Running time : 1.13 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052755.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 106773877                                                 ||
+||    Successfully assigned reads : 36684956 (34.4%)                          ||
+||    Running time : 1.32 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052756.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 70633500                                                  ||
+||    Successfully assigned reads : 35820242 (50.7%)                          ||
+||    Running time : 0.93 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052757.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 70243664                                                  ||
+||    Successfully assigned reads : 26364528 (37.5%)                          ||
+||    Running time : 0.99 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052758.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 46781035                                                  ||
+||    Successfully assigned reads : 13151771 (28.1%)                          ||
+||    Running time : 0.59 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052759.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 76652939                                                  ||
+||    Successfully assigned reads : 31147522 (40.6%)                          ||
+||    Running time : 1.07 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052760.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 58882742                                                  ||
+||    Successfully assigned reads : 27266668 (46.3%)                          ||
+||    Running time : 0.73 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052761.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 56677173                                                  ||
+||    Successfully assigned reads : 25355454 (44.7%)                          ||
+||    Running time : 0.71 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052762.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 99187294                                                  ||
+||    Successfully assigned reads : 22450140 (22.6%)                          ||
+||    Running time : 1.34 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052763.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 99987856                                                  ||
+||    Successfully assigned reads : 30074496 (30.1%)                          ||
+||    Running time : 1.35 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052764.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 65937416                                                  ||
+||    Successfully assigned reads : 23854040 (36.2%)                          ||
+||    Running time : 0.89 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052765.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 68907220                                                  ||
+||    Successfully assigned reads : 15176520 (22.0%)                          ||
+||    Running time : 0.86 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052766.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 88663717                                                  ||
+||    Successfully assigned reads : 30403778 (34.3%)                          ||
+||    Running time : 1.14 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052767.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 81735643                                                  ||
+||    Successfully assigned reads : 31615735 (38.7%)                          ||
+||    Running time : 1.02 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052768.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 63551452                                                  ||
+||    Successfully assigned reads : 9932631 (15.6%)                           ||
+||    Running time : 0.74 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052769.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 86613377                                                  ||
+||    Successfully assigned reads : 28139073 (32.5%)                          ||
+||    Running time : 1.18 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052770.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 105467499                                                 ||
+||    Successfully assigned reads : 34694680 (32.9%)                          ||
+||    Running time : 1.38 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052771.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 95538312                                                  ||
+||    Successfully assigned reads : 30274646 (31.7%)                          ||
+||    Running time : 1.33 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052772.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 92999019                                                  ||
+||    Successfully assigned reads : 31914791 (34.3%)                          ||
+||    Running time : 1.18 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052773.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 73339055                                                  ||
+||    Successfully assigned reads : 21010561 (28.6%)                          ||
+||    Running time : 0.83 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052774.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 70413063                                                  ||
+||    Successfully assigned reads : 19107332 (27.1%)                          ||
+||    Running time : 0.94 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052775.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 68622044                                                  ||
+||    Successfully assigned reads : 25858365 (37.7%)                          ||
+||    Running time : 0.92 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052776.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 98663039                                                  ||
+||    Successfully assigned reads : 43399030 (44.0%)                          ||
+||    Running time : 1.28 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052777.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 82650102                                                  ||
+||    Successfully assigned reads : 24638575 (29.8%)                          ||
+||    Running time : 0.93 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052778.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 69621865                                                  ||
+||    Successfully assigned reads : 20451416 (29.4%)                          ||
+||    Running time : 0.85 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052779.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 77630384                                                  ||
+||    Successfully assigned reads : 31682438 (40.8%)                          ||
+||    Running time : 1.02 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052780.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 48458753                                                  ||
+||    Successfully assigned reads : 14124328 (29.1%)                          ||
+||    Running time : 0.55 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052781.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 81012686                                                  ||
+||    Successfully assigned reads : 32529507 (40.2%)                          ||
+||    Running time : 1.12 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052782.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 67110581                                                  ||
+||    Successfully assigned reads : 20678309 (30.8%)                          ||
+||    Running time : 0.95 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052783.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 85219542                                                  ||
+||    Successfully assigned reads : 22724983 (26.7%)                          ||
+||    Running time : 1.10 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052784.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 61490342                                                  ||
+||    Successfully assigned reads : 27048161 (44.0%)                          ||
+||    Running time : 0.80 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052785.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 110718269                                                 ||
+||    Successfully assigned reads : 24195148 (21.9%)                          ||
+||    Running time : 1.48 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052786.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 88606475                                                  ||
+||    Successfully assigned reads : 26545688 (30.0%)                          ||
+||    Running time : 1.24 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052787.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 53268496                                                  ||
+||    Successfully assigned reads : 24108406 (45.3%)                          ||
+||    Running time : 0.67 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052788.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 84496893                                                  ||
+||    Successfully assigned reads : 29619202 (35.1%)                          ||
+||    Running time : 1.05 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052789.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 102453755                                                 ||
+||    Successfully assigned reads : 47587906 (46.4%)                          ||
+||    Running time : 1.31 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052790.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 71742691                                                  ||
+||    Successfully assigned reads : 25085907 (35.0%)                          ||
+||    Running time : 0.94 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052791.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 81724039                                                  ||
+||    Successfully assigned reads : 27653604 (33.8%)                          ||
+||    Running time : 1.02 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052792.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 80930219                                                  ||
+||    Successfully assigned reads : 25802644 (31.9%)                          ||
+||    Running time : 1.13 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052793.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 91316839                                                  ||
+||    Successfully assigned reads : 45355121 (49.7%)                          ||
+||    Running time : 1.14 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052794.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 88227221                                                  ||
+||    Successfully assigned reads : 40636994 (46.1%)                          ||
+||    Running time : 1.15 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052795.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 99463218                                                  ||
+||    Successfully assigned reads : 40448369 (40.7%)                          ||
+||    Running time : 1.34 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052796.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 108623933                                                 ||
+||    Successfully assigned reads : 39487852 (36.4%)                          ||
+||    Running time : 1.40 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052797.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 80315856                                                  ||
+||    Successfully assigned reads : 24014037 (29.9%)                          ||
+||    Running time : 1.02 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052798.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 90901090                                                  ||
+||    Successfully assigned reads : 20599912 (22.7%)                          ||
+||    Running time : 1.22 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052799.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 19834739                                                  ||
+||    Successfully assigned reads : 6724957 (33.9%)                           ||
+||    Running time : 0.26 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052800.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 64491901                                                  ||
+||    Successfully assigned reads : 22566785 (35.0%)                          ||
+||    Running time : 0.83 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052801.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 70805076                                                  ||
+||    Successfully assigned reads : 20595739 (29.1%)                          ||
+||    Running time : 0.85 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052802.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 99464958                                                  ||
+||    Successfully assigned reads : 37216270 (37.4%)                          ||
+||    Running time : 1.30 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052803.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 50646975                                                  ||
+||    Successfully assigned reads : 24415100 (48.2%)                          ||
+||    Running time : 0.67 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052804.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 65924594                                                  ||
+||    Successfully assigned reads : 29425580 (44.6%)                          ||
+||    Running time : 0.82 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052805.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 95991021                                                  ||
+||    Successfully assigned reads : 38944775 (40.6%)                          ||
+||    Running time : 1.37 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052806.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 111094502                                                 ||
+||    Successfully assigned reads : 31135698 (28.0%)                          ||
+||    Running time : 1.69 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052807.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 73499730                                                  ||
+||    Successfully assigned reads : 33624996 (45.7%)                          ||
+||    Running time : 0.95 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052808.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 57364050                                                  ||
+||    Successfully assigned reads : 22886857 (39.9%)                          ||
+||    Running time : 0.77 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052809.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 80149908                                                  ||
+||    Successfully assigned reads : 31104289 (38.8%)                          ||
+||    Running time : 1.07 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052810.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 53647814                                                  ||
+||    Successfully assigned reads : 19390011 (36.1%)                          ||
+||    Running time : 0.70 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052811.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 157564821                                                 ||
+||    Successfully assigned reads : 15449469 (9.8%)                           ||
+||    Running time : 2.27 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052812.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 72442863                                                  ||
+||    Successfully assigned reads : 31848400 (44.0%)                          ||
+||    Running time : 0.89 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052813.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 81696673                                                  ||
+||    Successfully assigned reads : 35976903 (44.0%)                          ||
+||    Running time : 1.12 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052814.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 126960051                                                 ||
+||    Successfully assigned reads : 48927998 (38.5%)                          ||
+||    Running time : 1.84 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052815.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 70947106                                                  ||
+||    Successfully assigned reads : 24648740 (34.7%)                          ||
+||    Running time : 1.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052816.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 91341523                                                  ||
+||    Successfully assigned reads : 24526245 (26.9%)                          ||
+||    Running time : 1.23 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052817.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 142857598                                                 ||
+||    Successfully assigned reads : 58615297 (41.0%)                          ||
+||    Running time : 1.98 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052818.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 94177731                                                  ||
+||    Successfully assigned reads : 35417530 (37.6%)                          ||
+||    Running time : 1.26 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052819.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 67633752                                                  ||
+||    Successfully assigned reads : 36626536 (54.2%)                          ||
+||    Running time : 0.85 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052820.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 69384011                                                  ||
+||    Successfully assigned reads : 28971465 (41.8%)                          ||
+||    Running time : 0.94 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052821.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 67831514                                                  ||
+||    Successfully assigned reads : 25574998 (37.7%)                          ||
+||    Running time : 0.84 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052822.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 101972818                                                 ||
+||    Successfully assigned reads : 33842405 (33.2%)                          ||
+||    Running time : 1.37 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052823.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 122654412                                                 ||
+||    Successfully assigned reads : 44628361 (36.4%)                          ||
+||    Running time : 1.79 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052824.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 99877686                                                  ||
+||    Successfully assigned reads : 42826181 (42.9%)                          ||
+||    Running time : 1.31 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052825.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 97960376                                                  ||
+||    Successfully assigned reads : 38840576 (39.6%)                          ||
+||    Running time : 1.47 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052826.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 120690499                                                 ||
+||    Successfully assigned reads : 58484362 (48.5%)                          ||
+||    Running time : 1.69 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052827.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 68375045                                                  ||
+||    Successfully assigned reads : 25269393 (37.0%)                          ||
+||    Running time : 0.92 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052828.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 86383785                                                  ||
+||    Successfully assigned reads : 29043018 (33.6%)                          ||
+||    Running time : 1.25 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052829.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 81606643                                                  ||
+||    Successfully assigned reads : 36798294 (45.1%)                          ||
+||    Running time : 1.17 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052830.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 97514830                                                  ||
+||    Successfully assigned reads : 39737577 (40.8%)                          ||
+||    Running time : 1.27 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052831.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 60049239                                                  ||
+||    Successfully assigned reads : 27519715 (45.8%)                          ||
+||    Running time : 0.79 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052832.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 52851362                                                  ||
+||    Successfully assigned reads : 21501217 (40.7%)                          ||
+||    Running time : 0.72 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052833.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 133505626                                                 ||
+||    Successfully assigned reads : 60202845 (45.1%)                          ||
+||    Running time : 1.82 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052834.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 88781938                                                  ||
+||    Successfully assigned reads : 37429367 (42.2%)                          ||
+||    Running time : 1.17 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052835.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 52442810                                                  ||
+||    Successfully assigned reads : 18628550 (35.5%)                          ||
+||    Running time : 0.70 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052836.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 37516643                                                  ||
+||    Successfully assigned reads : 11518506 (30.7%)                          ||
+||    Running time : 0.54 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052837.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 76785864                                                  ||
+||    Successfully assigned reads : 35208035 (45.9%)                          ||
+||    Running time : 1.01 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052838.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 19257725                                                  ||
+||    Successfully assigned reads : 9069365 (47.1%)                           ||
+||    Running time : 0.28 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052839.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 38211186                                                  ||
+||    Successfully assigned reads : 16158511 (42.3%)                          ||
+||    Running time : 0.50 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052840.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 113294918                                                 ||
+||    Successfully assigned reads : 24773825 (21.9%)                          ||
+||    Running time : 1.71 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052841.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 64820216                                                  ||
+||    Successfully assigned reads : 27121631 (41.8%)                          ||
+||    Running time : 0.83 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052842.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 121993231                                                 ||
+||    Successfully assigned reads : 41094138 (33.7%)                          ||
+||    Running time : 1.67 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052843.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 87604162                                                  ||
+||    Successfully assigned reads : 38385192 (43.8%)                          ||
+||    Running time : 1.17 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052844.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 113941313                                                 ||
+||    Successfully assigned reads : 28495506 (25.0%)                          ||
+||    Running time : 1.63 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052845.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 115821365                                                 ||
+||    Successfully assigned reads : 32951653 (28.5%)                          ||
+||    Running time : 1.59 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052846.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 120629650                                                 ||
+||    Successfully assigned reads : 31352275 (26.0%)                          ||
+||    Running time : 1.57 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052847.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 81021644                                                  ||
+||    Successfully assigned reads : 24921212 (30.8%)                          ||
+||    Running time : 1.06 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052848.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 102295590                                                 ||
+||    Successfully assigned reads : 30840331 (30.1%)                          ||
+||    Running time : 1.37 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052849.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 113116927                                                 ||
+||    Successfully assigned reads : 24225683 (21.4%)                          ||
+||    Running time : 1.43 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052850.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 103203140                                                 ||
+||    Successfully assigned reads : 27510722 (26.7%)                          ||
+||    Running time : 1.50 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052851.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 141555217                                                 ||
+||    Successfully assigned reads : 33935626 (24.0%)                          ||
+||    Running time : 1.90 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052852.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 160998891                                                 ||
+||    Successfully assigned reads : 48645714 (30.2%)                          ||
+||    Running time : 2.24 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052853.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 137882944                                                 ||
+||    Successfully assigned reads : 30798810 (22.3%)                          ||
+||    Running time : 1.83 minutes                                             ||
+||                                                                            ||
+|| Process SAM file SRR8052854.sra.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 137775527                                                 ||
+||    Successfully assigned reads : 41561555 (30.2%)                          ||
+||    Running time : 1.93 minutes                                             ||
+||                                                                            ||
+||                         Read assignment finished.                          ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/home/projects/ku_00015  ||
+|| /people/tuhu/gse121212/counts/gene_name/counts.txt.summary"                ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+

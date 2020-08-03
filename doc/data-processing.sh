@@ -54,3 +54,5 @@ mkdir -p /home/projects/ku_00015/people/tuhu/gse121212/counts
 featureCounts -T 32 -t exon -g gene_id -a /home/projects/ku_00015/data/rna-seq/reference/gtf/gencode.v34.annotation.gtf -o /home/projects/ku_00015/people/tuhu/gse121212/counts/counts.txt /home/projects/ku_00015/data/gse121212_data/mapping/hisat2/*.bam
 
 qsub -W group_list=ku_00015 -A ku_00015 -l nodes=1:ppn=40:thinnode,walltime=24:00:00 -m n /home/projects/ku_00015/people/tuhu/gse121212/doc/RNA-seq-featureCounts.sh
+
+qsub -W group_list=ku_00015 -A ku_00015 -l nodes=1:ppn=40:thinnode,walltime=24:00:00 -m n /home/projects/ku_00015/people/tuhu/gse121212/doc/RNA-seq-featureCounts_genename.sh
