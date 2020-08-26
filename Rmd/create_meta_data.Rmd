@@ -1,0 +1,54 @@
+---
+title: "Creat_metadata"
+author: "Tu Hu"
+date: "8/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+# meta data -------------
+```{r}
+library(dplyr)
+BAM_ID <- readr::read_csv("data/count_cleaned.csv") %>% 
+  colnames() %>% stringr::str_match("SRR\\d{1,}\\.sra\\.bam") %>% 
+  purrr::discard(is.na)
+meta_data <- readr::read_csv("../data/SraRunTable.txt") # %>% dplyr::select(Run, Skin_Type)
+```
+
+```{R read biosample list}
+biosample <- readr::read_lines("../data/biosample_result.txt")
+
+group <- biosample[biosample %>% stringr::str_detect("\\d{1,}\\.")] %>% 
+  stringr::str_remove("\\d{1,}\\.") %>% 
+  stringr::str_match("AD|PSO|CTRL")
+
+subject_id_df <- 
+biosample[biosample %>% stringr::str_detect("\\d{1,}\\.")] %>% 
+  stringr::str_remove("\\d{1,}\\.") %>%
+  stringr::str_match("(AD|PSO|CTRL)\\_\\d{3}")
+
+subject_id <- subject_id_df[,1]
+skin_type <- biosample[biosample %>% stringr::str_detect("\\d{1,}\\.")] %>% 
+  stringr::str_remove("\\d{1,}\\.") %>%
+  stringr::str_match("non-lesional|chronic_lesion|lesional|healthy")
+
+meta_data_final <-
+meta_data %>% rename(SAMN_ID = BioSample,
+                     SRR_ID = Run) %>%
+  dplyr::select(SRR_ID, SAMN_ID) %>% 
+  left_join(tibble(SAMN_ID = biosample %>% 
+                     stringr::str_match("SAMN\\d{1,};") %>% 
+                     purrr::discard(is.na) %>% stringr::str_remove(";"), 
+                   group, subject_id, skin_type)) %>% 
+  dplyr::select(-SAMN_ID)
+
+```
+
+```{r}
+
+```
+

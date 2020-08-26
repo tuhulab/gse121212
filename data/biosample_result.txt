@@ -1,0 +1,735 @@
+
+1. AD_036_non-lesional
+Identifiers:	BioSample: SAMN10238747; SRA: SRS3931304; GEO: GSM3428011
+Organism:	Homo sapiens
+Accession: SAMN10238747	ID: 10238747
+
+2. AD_036_chronic_lesion
+Identifiers:	BioSample: SAMN10238746; SRA: SRS3931305; GEO: GSM3428012
+Organism:	Homo sapiens
+Accession: SAMN10238746	ID: 10238746
+
+3. AD_037_non-lesional
+Identifiers:	BioSample: SAMN10238745; SRA: SRS3931306; GEO: GSM3428013
+Organism:	Homo sapiens
+Accession: SAMN10238745	ID: 10238745
+
+4. AD_037_chronic_lesion
+Identifiers:	BioSample: SAMN10238744; SRA: SRS3931307; GEO: GSM3428014
+Organism:	Homo sapiens
+Accession: SAMN10238744	ID: 10238744
+
+5. AD_017_lesional
+Identifiers:	BioSample: SAMN10238743; SRA: SRS3931176; GEO: GSM3427884
+Organism:	Homo sapiens
+Accession: SAMN10238743	ID: 10238743
+
+6. AD_017_non-lesional
+Identifiers:	BioSample: SAMN10238742; SRA: SRS3931177; GEO: GSM3427885
+Organism:	Homo sapiens
+Accession: SAMN10238742	ID: 10238742
+
+7. AD_019_lesional
+Identifiers:	BioSample: SAMN10238741; SRA: SRS3931178; GEO: GSM3427886
+Organism:	Homo sapiens
+Accession: SAMN10238741	ID: 10238741
+
+8. AD_019_non-lesional
+Identifiers:	BioSample: SAMN10238740; SRA: SRS3931179; GEO: GSM3427887
+Organism:	Homo sapiens
+Accession: SAMN10238740	ID: 10238740
+
+9. AD_020_lesional
+Identifiers:	BioSample: SAMN10238739; SRA: SRS3931180; GEO: GSM3427888
+Organism:	Homo sapiens
+Accession: SAMN10238739	ID: 10238739
+
+10. AD_020_non-lesional
+Identifiers:	BioSample: SAMN10238738; SRA: SRS3931181; GEO: GSM3427889
+Organism:	Homo sapiens
+Accession: SAMN10238738	ID: 10238738
+
+11. AD_021_lesional
+Identifiers:	BioSample: SAMN10238737; SRA: SRS3931182; GEO: GSM3427890
+Organism:	Homo sapiens
+Accession: SAMN10238737	ID: 10238737
+
+12. AD_021_non-lesional
+Identifiers:	BioSample: SAMN10238736; SRA: SRS3931183; GEO: GSM3427891
+Organism:	Homo sapiens
+Accession: SAMN10238736	ID: 10238736
+
+13. AD_023_lesional
+Identifiers:	BioSample: SAMN10238735; SRA: SRS3931184; GEO: GSM3427892
+Organism:	Homo sapiens
+Accession: SAMN10238735	ID: 10238735
+
+14. AD_023_non-lesional
+Identifiers:	BioSample: SAMN10238734; SRA: SRS3931185; GEO: GSM3427893
+Organism:	Homo sapiens
+Accession: SAMN10238734	ID: 10238734
+
+15. AD_024_lesional
+Identifiers:	BioSample: SAMN10238733; SRA: SRS3931186; GEO: GSM3427894
+Organism:	Homo sapiens
+Accession: SAMN10238733	ID: 10238733
+
+16. AD_024_non-lesional
+Identifiers:	BioSample: SAMN10238732; SRA: SRS3931187; GEO: GSM3427895
+Organism:	Homo sapiens
+Accession: SAMN10238732	ID: 10238732
+
+17. AD_025_lesional
+Identifiers:	BioSample: SAMN10238731; SRA: SRS3931188; GEO: GSM3427896
+Organism:	Homo sapiens
+Accession: SAMN10238731	ID: 10238731
+
+18. AD_025_non-lesional
+Identifiers:	BioSample: SAMN10238730; SRA: SRS3931189; GEO: GSM3427897
+Organism:	Homo sapiens
+Accession: SAMN10238730	ID: 10238730
+
+19. AD_026_lesional
+Identifiers:	BioSample: SAMN10238729; SRA: SRS3931190; GEO: GSM3427898
+Organism:	Homo sapiens
+Accession: SAMN10238729	ID: 10238729
+
+20. AD_026_non-lesional
+Identifiers:	BioSample: SAMN10238728; SRA: SRS3931191; GEO: GSM3427899
+Organism:	Homo sapiens
+Accession: SAMN10238728	ID: 10238728
+
+21. AD_027_lesional
+Identifiers:	BioSample: SAMN10238727; SRA: SRS3931192; GEO: GSM3427900
+Organism:	Homo sapiens
+Accession: SAMN10238727	ID: 10238727
+
+22. AD_004_lesional
+Identifiers:	BioSample: SAMN10238726; SRA: SRS3931161; GEO: GSM3427868
+Organism:	Homo sapiens
+Accession: SAMN10238726	ID: 10238726
+
+23. AD_004_non-lesional
+Identifiers:	BioSample: SAMN10238725; SRA: SRS3931162; GEO: GSM3427869
+Organism:	Homo sapiens
+Accession: SAMN10238725	ID: 10238725
+
+24. AD_005_lesional
+Identifiers:	BioSample: SAMN10238724; SRA: SRS3931163; GEO: GSM3427870
+Organism:	Homo sapiens
+Accession: SAMN10238724	ID: 10238724
+
+25. AD_005_non-lesional
+Identifiers:	BioSample: SAMN10238723; SRA: SRS3931164; GEO: GSM3427871
+Organism:	Homo sapiens
+Accession: SAMN10238723	ID: 10238723
+
+26. AD_006_lesional
+Identifiers:	BioSample: SAMN10238722; SRA: SRS3931166; GEO: GSM3427872
+Organism:	Homo sapiens
+Accession: SAMN10238722	ID: 10238722
+
+27. AD_006_non-lesional
+Identifiers:	BioSample: SAMN10238721; SRA: SRS3931165; GEO: GSM3427873
+Organism:	Homo sapiens
+Accession: SAMN10238721	ID: 10238721
+
+28. AD_007_lesional
+Identifiers:	BioSample: SAMN10238720; SRA: SRS3931167; GEO: GSM3427874
+Organism:	Homo sapiens
+Accession: SAMN10238720	ID: 10238720
+
+29. AD_007_non-lesional
+Identifiers:	BioSample: SAMN10238719; SRA: SRS3931168; GEO: GSM3427875
+Organism:	Homo sapiens
+Accession: SAMN10238719	ID: 10238719
+
+30. AD_009_lesional
+Identifiers:	BioSample: SAMN10238718; SRA: SRS3931169; GEO: GSM3427876
+Organism:	Homo sapiens
+Accession: SAMN10238718	ID: 10238718
+
+31. AD_009_non-lesional
+Identifiers:	BioSample: SAMN10238717; SRA: SRS3931170; GEO: GSM3427877
+Organism:	Homo sapiens
+Accession: SAMN10238717	ID: 10238717
+
+32. AD_011_lesional
+Identifiers:	BioSample: SAMN10238716; SRA: SRS3931171; GEO: GSM3427878
+Organism:	Homo sapiens
+Accession: SAMN10238716	ID: 10238716
+
+33. AD_011_non-lesional
+Identifiers:	BioSample: SAMN10238715; SRA: SRS3931172; GEO: GSM3427879
+Organism:	Homo sapiens
+Accession: SAMN10238715	ID: 10238715
+
+34. AD_033_non-lesional
+Identifiers:	BioSample: SAMN10238714; SRA: SRS3931298; GEO: GSM3428004
+Organism:	Homo sapiens
+Accession: SAMN10238714	ID: 10238714
+
+35. AD_033_chronic_lesion
+Identifiers:	BioSample: SAMN10238713; SRA: SRS3931297; GEO: GSM3428005
+Organism:	Homo sapiens
+Accession: SAMN10238713	ID: 10238713
+
+36. AD_034_non-lesional
+Identifiers:	BioSample: SAMN10238712; SRA: SRS3931299; GEO: GSM3428006
+Organism:	Homo sapiens
+Accession: SAMN10238712	ID: 10238712
+
+37. AD_034_chronic_lesion
+Identifiers:	BioSample: SAMN10238711; SRA: SRS3931300; GEO: GSM3428007
+Organism:	Homo sapiens
+Accession: SAMN10238711	ID: 10238711
+
+38. AD_032_chronic_lesion
+Identifiers:	BioSample: SAMN10238710; SRA: SRS3931302; GEO: GSM3428008
+Organism:	Homo sapiens
+Accession: SAMN10238710	ID: 10238710
+
+39. AD_035_non-lesional
+Identifiers:	BioSample: SAMN10238709; SRA: SRS3931301; GEO: GSM3428009
+Organism:	Homo sapiens
+Accession: SAMN10238709	ID: 10238709
+
+40. AD_035_chronic_lesion
+Identifiers:	BioSample: SAMN10238708; SRA: SRS3931303; GEO: GSM3428010
+Organism:	Homo sapiens
+Accession: SAMN10238708	ID: 10238708
+
+41. PSO_008_lesional
+Identifiers:	BioSample: SAMN10238707; SRA: SRS3931254; GEO: GSM3427961
+Organism:	Homo sapiens
+Accession: SAMN10238707	ID: 10238707
+
+42. PSO_008_non-lesional
+Identifiers:	BioSample: SAMN10238706; SRA: SRS3931255; GEO: GSM3427962
+Organism:	Homo sapiens
+Accession: SAMN10238706	ID: 10238706
+
+43. PSO_009_lesional
+Identifiers:	BioSample: SAMN10238705; SRA: SRS3931256; GEO: GSM3427963
+Organism:	Homo sapiens
+Accession: SAMN10238705	ID: 10238705
+
+44. PSO_009_non-lesional
+Identifiers:	BioSample: SAMN10238704; SRA: SRS3931257; GEO: GSM3427964
+Organism:	Homo sapiens
+Accession: SAMN10238704	ID: 10238704
+
+45. PSO_011_lesional
+Identifiers:	BioSample: SAMN10238703; SRA: SRS3931259; GEO: GSM3427965
+Organism:	Homo sapiens
+Accession: SAMN10238703	ID: 10238703
+
+46. PSO_011_non-lesional
+Identifiers:	BioSample: SAMN10238702; SRA: SRS3931258; GEO: GSM3427966
+Organism:	Homo sapiens
+Accession: SAMN10238702	ID: 10238702
+
+47. PSO_012_lesional
+Identifiers:	BioSample: SAMN10238701; SRA: SRS3931260; GEO: GSM3427967
+Organism:	Homo sapiens
+Accession: SAMN10238701	ID: 10238701
+
+48. PSO_012_non-lesional
+Identifiers:	BioSample: SAMN10238700; SRA: SRS3931261; GEO: GSM3427968
+Organism:	Homo sapiens
+Accession: SAMN10238700	ID: 10238700
+
+49. PSO_014_lesional
+Identifiers:	BioSample: SAMN10238699; SRA: SRS3931262; GEO: GSM3427969
+Organism:	Homo sapiens
+Accession: SAMN10238699	ID: 10238699
+
+50. PSO_014_non-lesional
+Identifiers:	BioSample: SAMN10238698; SRA: SRS3931263; GEO: GSM3427970
+Organism:	Homo sapiens
+Accession: SAMN10238698	ID: 10238698
+
+51. PSO_015_lesional
+Identifiers:	BioSample: SAMN10238697; SRA: SRS3931264; GEO: GSM3427971
+Organism:	Homo sapiens
+Accession: SAMN10238697	ID: 10238697
+
+52. PSO_015_non-lesional
+Identifiers:	BioSample: SAMN10238696; SRA: SRS3931265; GEO: GSM3427972
+Organism:	Homo sapiens
+Accession: SAMN10238696	ID: 10238696
+
+53. PSO_016_lesional
+Identifiers:	BioSample: SAMN10238695; SRA: SRS3931266; GEO: GSM3427973
+Organism:	Homo sapiens
+Accession: SAMN10238695	ID: 10238695
+
+54. PSO_016_non-lesional
+Identifiers:	BioSample: SAMN10238694; SRA: SRS3931267; GEO: GSM3427974
+Organism:	Homo sapiens
+Accession: SAMN10238694	ID: 10238694
+
+55. PSO_017_lesional
+Identifiers:	BioSample: SAMN10238693; SRA: SRS3931268; GEO: GSM3427975
+Organism:	Homo sapiens
+Accession: SAMN10238693	ID: 10238693
+
+56. PSO_017_non-lesional
+Identifiers:	BioSample: SAMN10238692; SRA: SRS3931269; GEO: GSM3427976
+Organism:	Homo sapiens
+Accession: SAMN10238692	ID: 10238692
+
+57. PSO_018_lesional
+Identifiers:	BioSample: SAMN10238691; SRA: SRS3931270; GEO: GSM3427977
+Organism:	Homo sapiens
+Accession: SAMN10238691	ID: 10238691
+
+58. PSO_018_non-lesional
+Identifiers:	BioSample: SAMN10238690; SRA: SRS3931271; GEO: GSM3427978
+Organism:	Homo sapiens
+Accession: SAMN10238690	ID: 10238690
+
+59. PSO_020_lesional
+Identifiers:	BioSample: SAMN10238689; SRA: SRS3931272; GEO: GSM3427979
+Organism:	Homo sapiens
+Accession: SAMN10238689	ID: 10238689
+
+60. PSO_020_non-lesional
+Identifiers:	BioSample: SAMN10238688; SRA: SRS3931273; GEO: GSM3427980
+Organism:	Homo sapiens
+Accession: SAMN10238688	ID: 10238688
+
+61. PSO_023_lesional
+Identifiers:	BioSample: SAMN10238687; SRA: SRS3931274; GEO: GSM3427981
+Organism:	Homo sapiens
+Accession: SAMN10238687	ID: 10238687
+
+62. PSO_023_non-lesional
+Identifiers:	BioSample: SAMN10238686; SRA: SRS3931275; GEO: GSM3427982
+Organism:	Homo sapiens
+Accession: SAMN10238686	ID: 10238686
+
+63. PSO_024_lesional
+Identifiers:	BioSample: SAMN10238685; SRA: SRS3931276; GEO: GSM3427983
+Organism:	Homo sapiens
+Accession: SAMN10238685	ID: 10238685
+
+64. PSO_024_non-lesional
+Identifiers:	BioSample: SAMN10238684; SRA: SRS3931277; GEO: GSM3427984
+Organism:	Homo sapiens
+Accession: SAMN10238684	ID: 10238684
+
+65. PSO_027_lesional
+Identifiers:	BioSample: SAMN10238683; SRA: SRS3931278; GEO: GSM3427985
+Organism:	Homo sapiens
+Accession: SAMN10238683	ID: 10238683
+
+66. PSO_027_non-lesional
+Identifiers:	BioSample: SAMN10238682; SRA: SRS3931279; GEO: GSM3427986
+Organism:	Homo sapiens
+Accession: SAMN10238682	ID: 10238682
+
+67. PSO_028_lesional
+Identifiers:	BioSample: SAMN10238681; SRA: SRS3931280; GEO: GSM3427987
+Organism:	Homo sapiens
+Accession: SAMN10238681	ID: 10238681
+
+68. PSO_028_non-lesional
+Identifiers:	BioSample: SAMN10238680; SRA: SRS3931281; GEO: GSM3427988
+Organism:	Homo sapiens
+Accession: SAMN10238680	ID: 10238680
+
+69. PSO_029_lesional
+Identifiers:	BioSample: SAMN10238679; SRA: SRS3931282; GEO: GSM3427989
+Organism:	Homo sapiens
+Accession: SAMN10238679	ID: 10238679
+
+70. PSO_029_non-lesional
+Identifiers:	BioSample: SAMN10238678; SRA: SRS3931283; GEO: GSM3427990
+Organism:	Homo sapiens
+Accession: SAMN10238678	ID: 10238678
+
+71. AD_014_lesional
+Identifiers:	BioSample: SAMN10238677; SRA: SRS3931173; GEO: GSM3427880
+Organism:	Homo sapiens
+Accession: SAMN10238677	ID: 10238677
+
+72. AD_014_non-lesional
+Identifiers:	BioSample: SAMN10238676; SRA: SRS3931174; GEO: GSM3427881
+Organism:	Homo sapiens
+Accession: SAMN10238676	ID: 10238676
+
+73. AD_016_lesional
+Identifiers:	BioSample: SAMN10238675; SRA: SRS3931199; GEO: GSM3427882
+Organism:	Homo sapiens
+Accession: SAMN10238675	ID: 10238675
+
+74. AD_016_non-lesional
+Identifiers:	BioSample: SAMN10238674; SRA: SRS3931175; GEO: GSM3427883
+Organism:	Homo sapiens
+Accession: SAMN10238674	ID: 10238674
+
+75. CTRL_036_healthy
+Identifiers:	BioSample: SAMN10238673; SRA: SRS3931231; GEO: GSM3427938
+Organism:	Homo sapiens
+Accession: SAMN10238673	ID: 10238673
+
+76. CTRL_037_healthy
+Identifiers:	BioSample: SAMN10238672; SRA: SRS3931230; GEO: GSM3427939
+Organism:	Homo sapiens
+Accession: SAMN10238672	ID: 10238672
+
+77. CTRL_038_healthy
+Identifiers:	BioSample: SAMN10238671; SRA: SRS3931232; GEO: GSM3427940
+Organism:	Homo sapiens
+Accession: SAMN10238671	ID: 10238671
+
+78. CTRL_039_healthy
+Identifiers:	BioSample: SAMN10238670; SRA: SRS3931234; GEO: GSM3427941
+Organism:	Homo sapiens
+Accession: SAMN10238670	ID: 10238670
+
+79. CTRL_040_healthy
+Identifiers:	BioSample: SAMN10238669; SRA: SRS3931235; GEO: GSM3427942
+Organism:	Homo sapiens
+Accession: SAMN10238669	ID: 10238669
+
+80. CTRL_041_healthy
+Identifiers:	BioSample: SAMN10238668; SRA: SRS3931233; GEO: GSM3427943
+Organism:	Homo sapiens
+Accession: SAMN10238668	ID: 10238668
+
+81. CTRL_042_healthy
+Identifiers:	BioSample: SAMN10238667; SRA: SRS3931237; GEO: GSM3427944
+Organism:	Homo sapiens
+Accession: SAMN10238667	ID: 10238667
+
+82. CTRL_043_healthy
+Identifiers:	BioSample: SAMN10238666; SRA: SRS3931238; GEO: GSM3427945
+Organism:	Homo sapiens
+Accession: SAMN10238666	ID: 10238666
+
+83. CTRL_044_healthy
+Identifiers:	BioSample: SAMN10238665; SRA: SRS3931239; GEO: GSM3427946
+Organism:	Homo sapiens
+Accession: SAMN10238665	ID: 10238665
+
+84. CTRL_045_healthy
+Identifiers:	BioSample: SAMN10238664; SRA: SRS3931240; GEO: GSM3427947
+Organism:	Homo sapiens
+Accession: SAMN10238664	ID: 10238664
+
+85. CTRL_046_healthy
+Identifiers:	BioSample: SAMN10238663; SRA: SRS3931241; GEO: GSM3427948
+Organism:	Homo sapiens
+Accession: SAMN10238663	ID: 10238663
+
+86. PSO_001_lesional
+Identifiers:	BioSample: SAMN10238662; SRA: SRS3931242; GEO: GSM3427949
+Organism:	Homo sapiens
+Accession: SAMN10238662	ID: 10238662
+
+87. PSO_001_non-lesional
+Identifiers:	BioSample: SAMN10238661; SRA: SRS3931243; GEO: GSM3427950
+Organism:	Homo sapiens
+Accession: SAMN10238661	ID: 10238661
+
+88. PSO_002_lesional
+Identifiers:	BioSample: SAMN10238660; SRA: SRS3931246; GEO: GSM3427951
+Organism:	Homo sapiens
+Accession: SAMN10238660	ID: 10238660
+
+89. PSO_002_non-lesional
+Identifiers:	BioSample: SAMN10238659; SRA: SRS3931244; GEO: GSM3427952
+Organism:	Homo sapiens
+Accession: SAMN10238659	ID: 10238659
+
+90. PSO_003_lesional
+Identifiers:	BioSample: SAMN10238658; SRA: SRS3931245; GEO: GSM3427953
+Organism:	Homo sapiens
+Accession: SAMN10238658	ID: 10238658
+
+91. PSO_003_non-lesional
+Identifiers:	BioSample: SAMN10238657; SRA: SRS3931249; GEO: GSM3427954
+Organism:	Homo sapiens
+Accession: SAMN10238657	ID: 10238657
+
+92. PSO_005_lesional
+Identifiers:	BioSample: SAMN10238656; SRA: SRS3931247; GEO: GSM3427955
+Organism:	Homo sapiens
+Accession: SAMN10238656	ID: 10238656
+
+93. PSO_005_non-lesional
+Identifiers:	BioSample: SAMN10238655; SRA: SRS3931248; GEO: GSM3427956
+Organism:	Homo sapiens
+Accession: SAMN10238655	ID: 10238655
+
+94. PSO_006_lesional
+Identifiers:	BioSample: SAMN10238654; SRA: SRS3931250; GEO: GSM3427957
+Organism:	Homo sapiens
+Accession: SAMN10238654	ID: 10238654
+
+95. PSO_006_non-lesional
+Identifiers:	BioSample: SAMN10238653; SRA: SRS3931251; GEO: GSM3427958
+Organism:	Homo sapiens
+Accession: SAMN10238653	ID: 10238653
+
+96. PSO_007_lesional
+Identifiers:	BioSample: SAMN10238652; SRA: SRS3931252; GEO: GSM3427959
+Organism:	Homo sapiens
+Accession: SAMN10238652	ID: 10238652
+
+97. PSO_007_non-lesional
+Identifiers:	BioSample: SAMN10238651; SRA: SRS3931253; GEO: GSM3427960
+Organism:	Homo sapiens
+Accession: SAMN10238651	ID: 10238651
+
+98. PSO_030_lesional
+Identifiers:	BioSample: SAMN10238650; SRA: SRS3931284; GEO: GSM3427991
+Organism:	Homo sapiens
+Accession: SAMN10238650	ID: 10238650
+
+99. PSO_030_non-lesional
+Identifiers:	BioSample: SAMN10238649; SRA: SRS3931285; GEO: GSM3427992
+Organism:	Homo sapiens
+Accession: SAMN10238649	ID: 10238649
+
+100. PSO_031_lesional
+Identifiers:	BioSample: SAMN10238648; SRA: SRS3931286; GEO: GSM3427993
+Organism:	Homo sapiens
+Accession: SAMN10238648	ID: 10238648
+
+101. PSO_031_non-lesional
+Identifiers:	BioSample: SAMN10238647; SRA: SRS3931287; GEO: GSM3427994
+Organism:	Homo sapiens
+Accession: SAMN10238647	ID: 10238647
+
+102. PSO_033_lesional
+Identifiers:	BioSample: SAMN10238646; SRA: SRS3931288; GEO: GSM3427995
+Organism:	Homo sapiens
+Accession: SAMN10238646	ID: 10238646
+
+103. PSO_033_non-lesional
+Identifiers:	BioSample: SAMN10238645; SRA: SRS3931289; GEO: GSM3427996
+Organism:	Homo sapiens
+Accession: SAMN10238645	ID: 10238645
+
+104. PSO_034_lesional
+Identifiers:	BioSample: SAMN10238644; SRA: SRS3931290; GEO: GSM3427997
+Organism:	Homo sapiens
+Accession: SAMN10238644	ID: 10238644
+
+105. PSO_035_lesional
+Identifiers:	BioSample: SAMN10238643; SRA: SRS3931291; GEO: GSM3427998
+Organism:	Homo sapiens
+Accession: SAMN10238643	ID: 10238643
+
+106. PSO_035_non-lesional
+Identifiers:	BioSample: SAMN10238642; SRA: SRS3931292; GEO: GSM3427999
+Organism:	Homo sapiens
+Accession: SAMN10238642	ID: 10238642
+
+107. PSO_036_lesional
+Identifiers:	BioSample: SAMN10238641; SRA: SRS3931293; GEO: GSM3428000
+Organism:	Homo sapiens
+Accession: SAMN10238641	ID: 10238641
+
+108. PSO_036_non-lesional
+Identifiers:	BioSample: SAMN10238640; SRA: SRS3931294; GEO: GSM3428001
+Organism:	Homo sapiens
+Accession: SAMN10238640	ID: 10238640
+
+109. PSO_037_lesional
+Identifiers:	BioSample: SAMN10238639; SRA: SRS3931295; GEO: GSM3428002
+Organism:	Homo sapiens
+Accession: SAMN10238639	ID: 10238639
+
+110. PSO_037_non-lesional
+Identifiers:	BioSample: SAMN10238638; SRA: SRS3931296; GEO: GSM3428003
+Organism:	Homo sapiens
+Accession: SAMN10238638	ID: 10238638
+
+111. AD_027_non-lesional
+Identifiers:	BioSample: SAMN10238637; SRA: SRS3931193; GEO: GSM3427901
+Organism:	Homo sapiens
+Accession: SAMN10238637	ID: 10238637
+
+112. AD_028_lesional
+Identifiers:	BioSample: SAMN10238636; SRA: SRS3931194; GEO: GSM3427902
+Organism:	Homo sapiens
+Accession: SAMN10238636	ID: 10238636
+
+113. AD_028_non-lesional
+Identifiers:	BioSample: SAMN10238635; SRA: SRS3931195; GEO: GSM3427903
+Organism:	Homo sapiens
+Accession: SAMN10238635	ID: 10238635
+
+114. AD_029_lesional
+Identifiers:	BioSample: SAMN10238634; SRA: SRS3931196; GEO: GSM3427904
+Organism:	Homo sapiens
+Accession: SAMN10238634	ID: 10238634
+
+115. AD_029_non-lesional
+Identifiers:	BioSample: SAMN10238633; SRA: SRS3931197; GEO: GSM3427905
+Organism:	Homo sapiens
+Accession: SAMN10238633	ID: 10238633
+
+116. AD_030_lesional
+Identifiers:	BioSample: SAMN10238632; SRA: SRS3931198; GEO: GSM3427906
+Organism:	Homo sapiens
+Accession: SAMN10238632	ID: 10238632
+
+117. AD_030_non-lesional
+Identifiers:	BioSample: SAMN10238631; SRA: SRS3931236; GEO: GSM3427907
+Organism:	Homo sapiens
+Accession: SAMN10238631	ID: 10238631
+
+118. AD_031_lesional
+Identifiers:	BioSample: SAMN10238630; SRA: SRS3931200; GEO: GSM3427908
+Organism:	Homo sapiens
+Accession: SAMN10238630	ID: 10238630
+
+119. AD_031_non-lesional
+Identifiers:	BioSample: SAMN10238629; SRA: SRS3931201; GEO: GSM3427909
+Organism:	Homo sapiens
+Accession: SAMN10238629	ID: 10238629
+
+120. AD_032_non-lesional
+Identifiers:	BioSample: SAMN10238628; SRA: SRS3931202; GEO: GSM3427910
+Organism:	Homo sapiens
+Accession: SAMN10238628	ID: 10238628
+
+121. CTRL_002_healthy
+Identifiers:	BioSample: SAMN10238627; SRA: SRS3931203; GEO: GSM3427911
+Organism:	Homo sapiens
+Accession: SAMN10238627	ID: 10238627
+
+122. CTRL_003_healthy
+Identifiers:	BioSample: SAMN10238626; SRA: SRS3931204; GEO: GSM3427912
+Organism:	Homo sapiens
+Accession: SAMN10238626	ID: 10238626
+
+123. CTRL_004_healthy
+Identifiers:	BioSample: SAMN10238625; SRA: SRS3931205; GEO: GSM3427913
+Organism:	Homo sapiens
+Accession: SAMN10238625	ID: 10238625
+
+124. CTRL_006_healthy
+Identifiers:	BioSample: SAMN10238624; SRA: SRS3931206; GEO: GSM3427914
+Organism:	Homo sapiens
+Accession: SAMN10238624	ID: 10238624
+
+125. CTRL_008_healthy
+Identifiers:	BioSample: SAMN10238623; SRA: SRS3931207; GEO: GSM3427915
+Organism:	Homo sapiens
+Accession: SAMN10238623	ID: 10238623
+
+126. CTRL_009_healthy
+Identifiers:	BioSample: SAMN10238622; SRA: SRS3931208; GEO: GSM3427916
+Organism:	Homo sapiens
+Accession: SAMN10238622	ID: 10238622
+
+127. CTRL_010_healthy
+Identifiers:	BioSample: SAMN10238621; SRA: SRS3931209; GEO: GSM3427917
+Organism:	Homo sapiens
+Accession: SAMN10238621	ID: 10238621
+
+128. CTRL_011_healthy
+Identifiers:	BioSample: SAMN10238620; SRA: SRS3931210; GEO: GSM3427918
+Organism:	Homo sapiens
+Accession: SAMN10238620	ID: 10238620
+
+129. CTRL_013_healthy
+Identifiers:	BioSample: SAMN10238619; SRA: SRS3931211; GEO: GSM3427919
+Organism:	Homo sapiens
+Accession: SAMN10238619	ID: 10238619
+
+130. CTRL_014_healthy
+Identifiers:	BioSample: SAMN10238618; SRA: SRS3931212; GEO: GSM3427920
+Organism:	Homo sapiens
+Accession: SAMN10238618	ID: 10238618
+
+131. CTRL_015_healthy
+Identifiers:	BioSample: SAMN10238617; SRA: SRS3931213; GEO: GSM3427921
+Organism:	Homo sapiens
+Accession: SAMN10238617	ID: 10238617
+
+132. CTRL_016_healthy
+Identifiers:	BioSample: SAMN10238616; SRA: SRS3931214; GEO: GSM3427922
+Organism:	Homo sapiens
+Accession: SAMN10238616	ID: 10238616
+
+133. CTRL_017_healthy
+Identifiers:	BioSample: SAMN10238615; SRA: SRS3931215; GEO: GSM3427923
+Organism:	Homo sapiens
+Accession: SAMN10238615	ID: 10238615
+
+134. CTRL_018_healthy
+Identifiers:	BioSample: SAMN10238614; SRA: SRS3931216; GEO: GSM3427924
+Organism:	Homo sapiens
+Accession: SAMN10238614	ID: 10238614
+
+135. CTRL_019_healthy
+Identifiers:	BioSample: SAMN10238613; SRA: SRS3931217; GEO: GSM3427925
+Organism:	Homo sapiens
+Accession: SAMN10238613	ID: 10238613
+
+136. CTRL_020_healthy
+Identifiers:	BioSample: SAMN10238612; SRA: SRS3931218; GEO: GSM3427926
+Organism:	Homo sapiens
+Accession: SAMN10238612	ID: 10238612
+
+137. CTRL_024_healthy
+Identifiers:	BioSample: SAMN10238611; SRA: SRS3931220; GEO: GSM3427928
+Organism:	Homo sapiens
+Accession: SAMN10238611	ID: 10238611
+
+138. CTRL_025_healthy
+Identifiers:	BioSample: SAMN10238610; SRA: SRS3931221; GEO: GSM3427929
+Organism:	Homo sapiens
+Accession: SAMN10238610	ID: 10238610
+
+139. CTRL_022_healthy
+Identifiers:	BioSample: SAMN10238609; SRA: SRS3931219; GEO: GSM3427927
+Organism:	Homo sapiens
+Accession: SAMN10238609	ID: 10238609
+
+140. CTRL_026_healthy
+Identifiers:	BioSample: SAMN10238608; SRA: SRS3931222; GEO: GSM3427930
+Organism:	Homo sapiens
+Accession: SAMN10238608	ID: 10238608
+
+141. CTRL_029_healthy
+Identifiers:	BioSample: SAMN10238607; SRA: SRS3931223; GEO: GSM3427931
+Organism:	Homo sapiens
+Accession: SAMN10238607	ID: 10238607
+
+142. CTRL_030_healthy
+Identifiers:	BioSample: SAMN10238606; SRA: SRS3931224; GEO: GSM3427932
+Organism:	Homo sapiens
+Accession: SAMN10238606	ID: 10238606
+
+143. CTRL_031_healthy
+Identifiers:	BioSample: SAMN10238605; SRA: SRS3931227; GEO: GSM3427933
+Organism:	Homo sapiens
+Accession: SAMN10238605	ID: 10238605
+
+144. CTRL_032_healthy
+Identifiers:	BioSample: SAMN10238604; SRA: SRS3931225; GEO: GSM3427934
+Organism:	Homo sapiens
+Accession: SAMN10238604	ID: 10238604
+
+145. CTRL_033_healthy
+Identifiers:	BioSample: SAMN10238603; SRA: SRS3931226; GEO: GSM3427935
+Organism:	Homo sapiens
+Accession: SAMN10238603	ID: 10238603
+
+146. CTRL_034_healthy
+Identifiers:	BioSample: SAMN10238602; SRA: SRS3931228; GEO: GSM3427936
+Organism:	Homo sapiens
+Accession: SAMN10238602	ID: 10238602
+
+147. CTRL_035_healthy
+Identifiers:	BioSample: SAMN10238601; SRA: SRS3931229; GEO: GSM3427937
+Organism:	Homo sapiens
+Accession: SAMN10238601	ID: 10238601
