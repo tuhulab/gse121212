@@ -6,7 +6,7 @@ The publication: [Atopic Dermatitis Is an IL-13–Dominant Disease with Greater 
 
 Raw data repository: [SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=GSE121212&o=acc_s%3Aa)
 
-## Links to the methods
+## Bioinformatics tools
 [Generaly Applicable Gene-set Enrichment for Pathway Analysis (GAGE)](http://bioconductor.org/packages/release/bioc/html/gage.html)
 
 [Enrichr](https://cran.r-project.org/web/packages/enrichR/index.html)
