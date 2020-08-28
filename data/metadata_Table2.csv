@@ -1,0 +1,114 @@
+ID.pheno,Trait,Sex,Age,FLG Mutation,"Severity
+(ScorAD/PASI)",Rhinitis,Asthma,PsA,"biopsy site non-
+lesional",biopsy site lesional,Dennie,Hertoghe,Palmar hyperlinearity,Xerosis,"Keratosis
+pilaris"
+AD_004,AD,female,48,no,35.5,yes,yes,,upper arm flexural right,upper arm flexural left,moderate,no,weak,moderate,no
+AD_005,AD,male,43,no,44.5,yes,yes,,upper arm flexural left,upper arm flexural right,no,no,moderate,moderate,weak
+AD_006,AD,male,25,2282del4,25,no,no,,upper arm flexural left,upper arm flexural right,weak,weak,moderate,moderate,weak
+AD_007,AD,male,33,R244X,15,yes,no,,upper arm flexural left,antecubital fossa left,no,no,moderate,weak,weak
+AD_009,AD,male,45,2282del4,32,yes,yes,,upper arm flexural left,antecubital fossa left,no,no,moderate,moderate,weak
+AD_011,AD,male,45,no,36,yes,yes,,upper arm flexural left,upper arm flexural left,no,no,weak,weak,moderate
+AD_014,AD,male,37,no,48,yes,no,,upper arm flexural left,upper arm flexural left,no,no,weak,moderate,no
+AD_016,AD,female,25,no,18.5,no,no,,"upper arm flexural
+left",upper arm flexural left,no,no,weak,moderate,moderate
+AD_017,AD,female,42,no,38,yes,yes,,"upper arm flexural
+left",upper arm flexural left,weak,no,moderate,strong,weak
+AD_019,AD,female,22,no,24.5,no,no,,"upper arm flexural
+left",antecubital fossa left,no,no,no,moderate,weak
+AD_020,AD,female,43,no,42.5,yes,yes,,"upper arm flexural
+right",antecubital fossa,weak,no,weak,strong,weak
+AD_021,AD,female,29,no,15,no,no,,"upper arm flexural
+left",antecubital fossa left,weak,no,no,weak,no
+AD_023,AD,male,47,R244X/2282del 4,47,yes,yes,,upper arm flexural left,upper arm flexural left,weak,weak,strong,strong,weak
+AD_024,AD,female,45,no,22.6,no,yes,,,upper arm flexural right,no,no,weak,strong,weak
+AD_025,AD,female,22,no,22.6,no,no,,"upper arm flexural
+left",antecubital fossa left,weak,no,no,moderate,no
+AD_026,AD,male,19,no,33.5,yes,yes,,"upper arm flexural
+left",antecubital fossa left,no,no,weak,weak,no
+AD_027,AD,female,22,no,14,yes,yes,,"upper arm flexural
+left","upper upper arm flexural
+left",no,weak,no,moderate,no
+AD_028,AD,male,31,no,19,yes,yes,,"upper arm flexural
+right",upper arm flexural right,weak,no,weak,moderate,no
+AD_029,AD,male,21,no,25.7,yes,no,,"upper arm flexural
+left",upper arm flexural left,moderate,no,weak,no,no
+AD_030,AD,female,23,no,26.5,no,no,,"upper arm flexural
+right",antecubital fossa right,no,no,no,weak,no
+AD_031,AD,male,24,no,30.6,no,no,,"upper arm flexural
+left",upper arm flexural left,weak,no,no,moderate,moderate
+AD_032,AD,male,53,2282del4,29,no,no,,"upper arm flexural
+left",antecubital fossa right,no,no,moderate,moderate,weak
+AD_033,AD,male,48,no,39,yes,yes,,"upper leg flexural
+right",upper leg flexural right,moderate,no,no,strong,no
+AD_034,AD,male,30,R501X,38,yes,yes,,"upper arm flexural
+right",upper arm flexural right,no,no,moderate,moderate,no
+AD_035,AD,male,19,no,26,yes,no,,upper arm flexural left,lower arm left,weak,no,no,weak,no
+AD_036,AD,male,45,R501X/2282del 4,56,yes,no,,upper arm flexural left,upper arm flexural left,no,no,moderate,strong,no
+AD_037,AD,male,34,no,36,no,no,,upper arm flexural left,upper arm flexural left,weak,weak,no,weak,no
+PSO_001,PSO,female,28,,3.3,,,yes,upper arm extensor left,ellbow left,,,,,
+PSO_002,PSO,male,50,,5,,,no,"upper arm flexural
+left",upper arm flexural  left,,,,,
+PSO_003,PSO,female,50,,6.2,,,yes,upper leg flexural left,upper leg flexural left,,,,,
+PSO_005,PSO,female,33,,4.3,,,no,lower leg flexural right,lower leg flexural right,,,,,
+PSO_006,PSO,female,50,,7,,,no,lower leg flexural  left,lower leg flexural left,,,,,
+PSO_007,PSO,female,68,,3.8,,,unknown,upper arm extensor right,upper arm extensor right,,,,,
+PSO_008,PSO,female,35,,5,,,no,upper arm flexural left,ellbow left,,,,,
+PSO_009,PSO,male,71,,6.2,,,yes,lower leg flexural left,lower arm flexural left,,,,,
+PSO_011,PSO,male,53,,8.3,,,yes,lower leg extensor  left,lower leg extensor  left,,,,,
+PSO_012,PSO,female,46,,5.8,,,unknown,lower leg extensor  left,lower leg extensor  left,,,,,
+PSO_014,PSO,male,22,,6.8,,,no,upper arm extensor  left,upper arm extensor  left,,,,,
+PSO_015,PSO,male,49,,22.4,,,unknown,upper arm extensor  left,upper arm extensor  left,,,,,
+PSO_016,PSO,male,23,,5.4,,,no,upper arm extensor  left,upper arm extensor  left,,,,,
+PSO_017,PSO,male,30,,6.6,,,no,lower arm extensor  left,lower arm extensor left,,,,,
+PSO_018,PSO,female,38,,1.8,,,no,upper arm extensor  left,upper arm extensor  left,,,,,
+PSO_020,PSO,female,21,,2.7,,,unknown,upper leg flexural left,upper leg flexural left,,,,,
+PSO_023,PSO,female,36,,1.2,,,unknown,upper arm extensor  left,ellbow left,,,,,
+PSO_024,PSO,male,69,,2.9,,,no,upper arm extensor  right,ellbow right,,,,,
+PSO_027,PSO,male,46,,3.6,,,no,upper arm flexural  left,ellbow left,,,,,
+PSO_028,PSO,male,41,,9.7,,,no,upper arm extensor left,upper arm extensor left,,,,,
+PSO_029,PSO,female,70,,2,,,unknown,upper arm extensor right,ellbow right,,,,,
+PSO_030,PSO,male,52,,6.8,,,no,upper arm extensor right,ellbow right,,,,,
+PSO_031,PSO,male,40,,11.4,,,no,upper arm extensor right,ellbow right,,,,,
+PSO_033,PSO,female,28,,4.5,,,no,upper arm extensor right,upper arm extensor right,,,,,
+PSO_034,PSO,male,28,,4,,,unknown,upper arm flexural  left,upper arm flexural left,,,,,
+PSO_035,PSO,male,24,,1.3,,,no,upper arm flexural  left,upper arm flexural  left,,,,,
+PSO_036,PSO,female,18,,3.5,,,no,upper arm extensor  left,upper arm extensor  left,,,,,
+PSO_037,PSO,female,54,,10.5,,,unknown,upper arm extensor  right,upper arm extensor  right,,,,,
+CTRL_002,CTRL,female,42,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_003,CTRL,female,25,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_004,CTRL,female,28,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_006,CTRL,female,24,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_008,CTRL,male,28,no,,no,no,,upper arm flexural  right,,no,no,no,no,weak
+CTRL_009,CTRL,female,33,no,,no,no,,upper arm flexural  left,,no,no,no,no,weak
+CTRL_010,CTRL,female,27,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_011,CTRL,male,26,no,,no,no,,upper arm flexural  left,,no,no,no,no,moderate
+CTRL_013,CTRL,male,42,no,,no,no,,upper arm extensor  right,,no,no,no,no,no
+CTRL_014,CTRL,male,24,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_015,CTRL,female,28,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_016,CTRL,female,32,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_017,CTRL,male,30,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_018,CTRL,male,23,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_019,CTRL,female,40,no,,no,no,,upper arm extensor left,,no,no,weak,no,moderate
+CTRL_020,CTRL,male,26,no,,no,no,,upper arm flexural  left,,no,no,no,weak,no
+CTRL_022,CTRL,male,47,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_024,CTRL,female,47,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_025,CTRL,female,25,no,,no,no,,upper arm flexural  left,,no,weak,no,no,no
+CTRL_026,CTRL,female,31,no,,no,no,,upper arm flexural  left,,no,weak,no,no,no
+CTRL_029,CTRL,male,40,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_030,CTRL,male,40,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_031,CTRL,male,54,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_032,CTRL,male,37,no,,no,no,,upper arm flexural  right,,no,no,no,no,no
+CTRL_033,CTRL,female,52,no,,no,no,,upper arm extensor  left,,no,no,no,no,no
+CTRL_034,CTRL,male,61,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_035,CTRL,female,29,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_036,CTRL,female,25,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_037,CTRL,male,22,no,,no,no,,upper arm flexural  left,,no,no,no,no,weak
+CTRL_038,CTRL,female,20,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_039,CTRL,female,19,no,,no,no,,upper arm extensor  left,,no,no,weak,no,no
+CTRL_040,CTRL,female,20,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_041,CTRL,female,57,no,,no,no,,upper arm extensor  right,,no,no,no,no,no
+CTRL_042,CTRL,female,20,2282del4,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_043,CTRL,female,24,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
+CTRL_044,CTRL,male,18,no,,no,no,,upper arm flexural  right,,no,no,no,no,no
+CTRL_045,CTRL,female,25,no,,no,no,,upper arm flexural  right,,no,no,no,no,no
+CTRL_046,CTRL,male,49,no,,no,no,,upper arm flexural  left,,no,no,no,no,no
