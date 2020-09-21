@@ -46,6 +46,31 @@ cLS_CO_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_result,
 NL_CO_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_result, 
                                                coef_name = "skin_type_NL_vs_CO", 
                                                df_gene_annotation = data_list_AD_CO$gene_annotation)
+saveRDS(aLS_CO_significant, "data/rds/aLS_CO_DGE.rds")
+saveRDS(cLS_CO_significant, "data/rds/cLS_CO_DGE.rds")
+saveRDS(NL_CO_significant, "data/rds/NL_CO_DGE.rds")
 
+## DGE analysis - aLSvsNL_aLSvscLS_subject_matched
+index_ad <- which(data_list$metadata$group == "AD")
+data_list_AD <- data_list
+data_list_AD$metadata <- 
+  data_list$metadata[index_ad,] %>% 
+  mutate(skin_type = skin_type %>% 
+           stringr::str_replace("healthy", "CO")  %>% 
+           stringr::str_replace("non-lesional", "NL") %>% 
+           stringr::str_replace("lesional", "aLS") %>% 
+           stringr::str_replace("chronic_lesion", "cLS") %>% 
+           factor(levels = c("NL", "cLS", "aLS"))) 
+data_list_AD$counttable <- data_list_AD$counttable[,index_ad]
 
-
+DGE_sub_match <- DESeqDataSetFromMatrix(countData = data_list_AD$counttable,
+                                        colData = data_list_AD$metadata,
+                                        design = ~ subject_id + skin_type)
+DGE_sub_match_result <- DESeq(DGE_sub_match)
+resultsNames(DGE_sub_match_result)
+aLS_NL_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_sub_match_result, 
+                                                coef_name = "skin_type_aLS_vs_NL", 
+                                                df_gene_annotation = data_list_AD$gene_annotation)
+cLS_NL_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_sub_match_result, 
+                                                coef_name = "skin_type_cLS_vs_NL", 
+                                                df_gene_annotation = data_list_AD$gene_annotation)
