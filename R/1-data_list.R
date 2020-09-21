@@ -15,31 +15,21 @@ data_list$gene_annotation <- count_data[gene_keep, 1:6]
 data_list$counttable <- count_data[gene_keep, -1:-6]
 
 # construct metadata
-data_list$metadata <- tibble(BAM_ID = 
-                               data_list$counttable %>% 
-                               colnames() %>% 
-                               stringr::str_match("SRR\\d{1,}\\.sra\\.bam"))
-
-
-meta_data <- readr::read_csv("data/SraRunTable.txt") # %>% dplyr::select(Run, Skin_Type)
+sra_run_table <- readr::read_csv("data/SraRunTable.txt") # %>% dplyr::select(Run, Skin_Type)
 biosample <- readr::read_lines("data/biosample_result.txt")
-
 group <- biosample[biosample %>% stringr::str_detect("\\d{1,}\\.")] %>% 
   stringr::str_remove("\\d{1,}\\.") %>% 
-  stringr::str_match("AD|PSO|CTRL")
-
+  stringr::str_match("AD|PSO|CTRL") %>% as.character()
 subject_id_df <- 
   biosample[biosample %>% stringr::str_detect("\\d{1,}\\.")] %>% 
   stringr::str_remove("\\d{1,}\\.") %>%
   stringr::str_match("(AD|PSO|CTRL)\\_\\d{3}")
-
 subject_id <- subject_id_df[,1]
 skin_type <- biosample[biosample %>% stringr::str_detect("\\d{1,}\\.")] %>% 
   stringr::str_remove("\\d{1,}\\.") %>%
-  stringr::str_match("non-lesional|chronic_lesion|lesional|healthy")
-
-meta_data_final <-
-  meta_data %>% rename(SAMN_ID = BioSample,
+  stringr::str_match("non-lesional|chronic_lesion|lesional|healthy") %>% as.character()
+sra_run_table_final <-
+  sra_run_table %>% rename(SAMN_ID = BioSample,
                        SRR_ID = Run) %>%
   dplyr::select(SRR_ID, SAMN_ID) %>% 
   left_join(tibble(SAMN_ID = biosample %>% 
@@ -47,3 +37,17 @@ meta_data_final <-
                      purrr::discard(is.na) %>% stringr::str_remove(";"), 
                    group, subject_id, skin_type)) %>% 
   dplyr::select(-SAMN_ID)
+
+data_list$metadata <- tibble(SRR_ID = 
+                               data_list$counttable %>% 
+                               colnames() %>% 
+                               stringr::str_match("SRR\\d{1,}") %>% 
+                               as.character()) %>% left_join(sra_run_table_final)
+
+appendix_table2 <- readr::read_csv("data/metadata_Table2.csv") %>% 
+  rename(FLG_mutation = `FLG Mutation`, 
+         severity = `Severity\n(ScorAD/PASI)`,
+         biopsy_site_non_lesional = `biopsy site non-\nlesional`,
+         biopsy_site_lesional = `biopsy site lesional`,
+         palmer_hyperlinearity = `Palmar hyperlinearity`,
+         keratosis_pilaris = `Keratosis\npilaris`)
