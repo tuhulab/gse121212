@@ -38,16 +38,22 @@ sra_run_table_final <-
                    group, subject_id, skin_type)) %>% 
   dplyr::select(-SAMN_ID)
 
-data_list$metadata <- tibble(SRR_ID = 
-                               data_list$counttable %>% 
-                               colnames() %>% 
-                               stringr::str_match("SRR\\d{1,}") %>% 
-                               as.character()) %>% left_join(sra_run_table_final)
-
 appendix_table2 <- readr::read_csv("data/metadata_Table2.csv") %>% 
   rename(FLG_mutation = `FLG Mutation`, 
          severity = `Severity\n(ScorAD/PASI)`,
          biopsy_site_non_lesional = `biopsy site non-\nlesional`,
          biopsy_site_lesional = `biopsy site lesional`,
          palmer_hyperlinearity = `Palmar hyperlinearity`,
-         keratosis_pilaris = `Keratosis\npilaris`)
+         keratosis_pilaris = `Keratosis\npilaris`) %>% 
+  mutate(FLG_mutation = FLG_mutation %>% stringr::str_replace_all(" ","_"),
+         biopsy_site_lesional = biopsy_site_lesional %>% stringr::str_replace_all(" ","_"),
+         biopsy_site_non_lesional = biopsy_site_non_lesional %>% stringr::str_replace_all(" ","_"))
+
+data_list$metadata <- tibble(SRR_ID = 
+                               data_list$counttable %>% 
+                               colnames() %>% 
+                               stringr::str_match("SRR\\d{1,}") %>% 
+                               as.character()) %>% left_join(sra_run_table_final) %>% 
+  left_join(appendix_table2, by = c("subject_id" = "ID.pheno"))
+
+data_list %>% saveRDS("data/rds/gse121212_list_raw.rds")
