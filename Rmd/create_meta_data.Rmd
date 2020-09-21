@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # meta data -------------
 ```{r}
 library(dplyr)
-BAM_ID <- readr::read_csv("data/count_cleaned.csv") %>% 
+BAM_ID <- readr::read_csv("../data/count_cleaned.csv") %>% 
   colnames() %>% stringr::str_match("SRR\\d{1,}\\.sra\\.bam") %>% 
   purrr::discard(is.na)
 meta_data <- readr::read_csv("../data/SraRunTable.txt") # %>% dplyr::select(Run, Skin_Type)

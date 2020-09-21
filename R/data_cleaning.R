@@ -12,3 +12,7 @@ counttable_annotate <-
          End = End %>% str_extract("\\d{1,}(?=;)|\\d{1,}$"))
 
 counttable_annotate %>% write_csv("data/count_cleaned.csv")
+
+# 
+counttable <- readr::read_csv("data/count_cleaned.csv")
+metadata <- readr::read_csv("data/metadata_Table2.csv")
