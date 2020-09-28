@@ -91,5 +91,11 @@ aLS_NL_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_sub_matc
 cLS_NL_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_sub_match_result, 
                                                 coef_name = "skin_type_cLS_vs_NL", 
                                                 df_gene_annotation = data_list_AD$gene_annotation)
+aLS_NL_all <- extract_all_genes(DESeq2_DGE_result = DGE_sub_match_result, coef_name = "skin_type_aLS_vs_NL", df_gene_annotation = data_list_AD$gene_annotation)
+cLS_NL_all <- extract_all_genes(DESeq2_DGE_result = DGE_sub_match_result, coef_name = "skin_type_cLS_vs_NL", df_gene_annotation = data_list_AD$gene_annotation)
+
 saveRDS(aLS_NL_significant, "data/rds/aLS_NL_DGE.rds")
 saveRDS(cLS_NL_significant, "data/rds/cLS_NL_DGE.rds")
+
+saveRDS(aLS_NL_all, "data/rds/aLS_NL_DGE_all.rds")
+saveRDS(cLS_NL_all, "data/rds/cLS_NL_DGE_all.rds")
