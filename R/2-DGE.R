@@ -28,6 +28,7 @@ DGE <- DESeqDataSetFromMatrix(countData = data_list_AD_CO$counttable,
 DGE_result <- DESeq(DGE)
 resultsNames(DGE_result)
 
+## DGE-Extract significant genes -----
 extract_significant_genes <- function(DESeq2_DGE_result = ..., 
                                       coef_name = ...,
                                       lfc_shrink_method = "apeglm",
@@ -49,6 +50,22 @@ NL_CO_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_result,
 saveRDS(aLS_CO_significant, "data/rds/aLS_CO_DGE.rds")
 saveRDS(cLS_CO_significant, "data/rds/cLS_CO_DGE.rds")
 saveRDS(NL_CO_significant, "data/rds/NL_CO_DGE.rds")
+
+## DGE-Extract all genes ----------------
+extract_all_genes <- function(DESeq2_DGE_result = ..., 
+                              coef_name = ...,
+                              lfc_shrink_method = "apeglm",
+                              df_gene_annotation = ...){
+  lfcshrink_result <- lfcShrink(DESeq2_DGE_result, coef=coef_name, type=lfc_shrink_method)
+  all_result <- bind_cols(df_gene_annotation, lfcshrink_result %>% as.data.frame())
+}
+aLS_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_aLS_vs_CO", df_gene_annotation = data_list_AD_CO$gene_annotation)
+cLS_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_cLS_vs_CO", df_gene_annotation = data_list_AD_CO$gene_annotation)
+NL_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_NL_vs_CO", df_gene_annotation = data_list_AD_CO$gene_annotation)
+saveRDS(aLS_CO_all, "data/rds/aLS_CO_DGE_all.rds")
+saveRDS(cLS_CO_all, "data/rds/cLS_CO_DGE_all.rds")
+saveRDS(NL_CO_all, "data/rds/NL_CO_DGE_all.rds")
+
 
 ## DGE analysis - aLSvsNL_aLSvscLS_subject_matched
 index_ad <- which(data_list$metadata$group == "AD")
