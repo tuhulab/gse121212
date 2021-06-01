@@ -6,7 +6,7 @@ The publication: [Atopic Dermatitis Is an IL-13–Dominant Disease with Greater 
 
 Raw data repository: [SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=GSE121212&o=acc_s%3Aa)
 
-# Data
+# AD Data
 | No. | Type     | Comparision                                             | Read R object                                                                                                                        |
 | :---|:---------|:--------------------------------------------------------| :------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | DGE list |aLSvsCO (acute lesion vs healthy control)                | readRDS(url("https://rawcdn.githack.com/tuhulab/gse121212/ab5db865c53d44ee381294bbaec34c31013e1f52/data/rds/aLS_CO_DGE.rds"))        |
@@ -24,6 +24,13 @@ Raw data repository: [SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/stud
 1-5: AD Differentially expressed genes (|log2FC|>1, adj. p<0.05); aLS - acute lesion; CO - healthy control; cLS - chronic lesion; NL - non-lesional
 6: raw counts, metadata, gene annotation
 1*-5*: AD (all genes)
+
+# PSO data
+| no | list | command|
+---|---|---
+| 1 | DGE list (including all genes) - PSO LS vs NL, subject matched |  readRDS(url("https://rawcdn.githack.com/tuhulab/gse121212/3d41fde27376cf24a6cea12f90af4a6de4c9e162/data/rds/PSO/PSO_LS_NL_DGE_all.rds"))
+| 2 | DGE list (including all genes) - PSO LS vs CO | readRDS(url("https://rawcdn.githack.com/tuhulab/gse121212/3d41fde27376cf24a6cea12f90af4a6de4c9e162/data/rds/PSO/PSO_LS_CO_DGE_all.rds")) |
+| 3 | DGE list (including all genes) - PSO NL vs CO | readRDS(url("https://rawcdn.githack.com/tuhulab/gse121212/3d41fde27376cf24a6cea12f90af4a6de4c9e162/data/rds/PSO/PSO_NL_CO_DGE_all.rds"))
 
 # Materials and methods
 ## Bioinformatics tools
