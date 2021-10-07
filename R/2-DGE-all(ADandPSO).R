@@ -36,7 +36,7 @@ DGE_design <-
     C2_t = str_extract(C2, "AD|PSO|CO"),
     contrast = paste0(C1, "vs", C2),
     subject_matched = (C1_t == C2_t),
-    se_exp = map2(C1, C2, function(c1, c2){se[,se$skin_type %in% c(c1, c2)]}),
+    se_exp = map2(C1, C2, ~ se[,se$skin_type %in% c(.x, .y)]),
     design_f = ifelse(subject_matched, 
                       "~ subject_id + skin_type",
                       "~ Sex + skin_type"),
@@ -45,5 +45,4 @@ DGE_design <-
     res_name = map_chr(deseq_res, ~ grep("skin_type", resultsNames(.x), value = TRUE)),
     res_shrink = map2(deseq_res, res_name, ~ lfcShrink(.x, coef = .y, type = "apeglm", parallel = TRUE)),
     res_shrink = map(res_shrink, ~ as_tibble(.x, rownames = "gene_name")))
-
 saveRDS(DGE_design %>% select(contrast, res_shrink), "data/DGE_full_model.rds")

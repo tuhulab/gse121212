@@ -9,21 +9,21 @@ register(MulticoreParam(detectCores()-1))
 data_list <- readRDS("data/rds/gse121212_list_raw.rds")
 
 ## Manipulate data
-index_ad_co <- which(data_list$metadata$group %in% c("AD", "CTRL"))
-data_list_AD_CO <- data_list
-data_list_AD_CO$metadata <- 
-  data_list$metadata[index_ad_co,] %>% 
+index_ad_pso <- which(data_list$metadata$group %in% c("PSO", "CTRL"))
+
+data_list_PSO_CO <- data_list
+data_list_PSO_CO$metadata <- 
+  data_list$metadata[index_ad_pso,] %>% 
   mutate(skin_type = skin_type %>% 
            stringr::str_replace("healthy", "CO")  %>% 
            stringr::str_replace("non-lesional", "NL") %>% 
-           stringr::str_replace("lesional", "aLS") %>% 
-           stringr::str_replace("chronic_lesion", "cLS") %>% 
-           factor(levels = c("CO", "NL", "cLS", "aLS"))) 
-data_list_AD_CO$counttable <- data_list_AD_CO$counttable[,index_ad_co]
+           stringr::str_replace("lesional", "LS") %>% 
+           factor(levels = c("CO", "NL", "LS"))) 
+data_list_PSO_CO$counttable <- data_list_PSO_CO$counttable[,index_ad_pso]
 
 ## DGE analysis
-DGE <- DESeqDataSetFromMatrix(countData = data_list_AD_CO$counttable,
-                              colData = data_list_AD_CO$metadata,
+DGE <- DESeqDataSetFromMatrix(countData = data_list_PSO_CO$counttable,
+                              colData = data_list_PSO_CO$metadata,
                               design = ~ Sex + skin_type)
 DGE_result <- DESeq(DGE)
 resultsNames(DGE_result)
@@ -40,13 +40,13 @@ extract_significant_genes <- function(DESeq2_DGE_result = ...,
 
 aLS_CO_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_result, 
                                                 coef_name = "skin_type_aLS_vs_CO", 
-                                                df_gene_annotation = data_list_AD_CO$gene_annotation)
+                                                df_gene_annotation = data_list_PSO_CO$gene_annotation)
 cLS_CO_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_result, 
                                                 coef_name = "skin_type_cLS_vs_CO", 
-                                                df_gene_annotation = data_list_AD_CO$gene_annotation)
+                                                df_gene_annotation = data_list_PSO_CO$gene_annotation)
 NL_CO_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_result, 
                                                coef_name = "skin_type_NL_vs_CO", 
-                                               df_gene_annotation = data_list_AD_CO$gene_annotation)
+                                               df_gene_annotation = data_list_PSO_CO$gene_annotation)
 saveRDS(aLS_CO_significant, "data/rds/aLS_CO_DGE.rds")
 saveRDS(cLS_CO_significant, "data/rds/cLS_CO_DGE.rds")
 saveRDS(NL_CO_significant, "data/rds/NL_CO_DGE.rds")
@@ -59,43 +59,34 @@ extract_all_genes <- function(DESeq2_DGE_result = ...,
   lfcshrink_result <- lfcShrink(DESeq2_DGE_result, coef=coef_name, type=lfc_shrink_method)
   all_result <- bind_cols(df_gene_annotation, lfcshrink_result %>% as.data.frame())
 }
-aLS_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_aLS_vs_CO", df_gene_annotation = data_list_AD_CO$gene_annotation)
-cLS_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_cLS_vs_CO", df_gene_annotation = data_list_AD_CO$gene_annotation)
-NL_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_NL_vs_CO", df_gene_annotation = data_list_AD_CO$gene_annotation)
-saveRDS(aLS_CO_all, "data/rds/aLS_CO_DGE_all.rds")
-saveRDS(cLS_CO_all, "data/rds/cLS_CO_DGE_all.rds")
-saveRDS(NL_CO_all, "data/rds/NL_CO_DGE_all.rds")
+PSO_LS_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_LS_vs_CO", df_gene_annotation = data_list_PSO_CO$gene_annotation)
+PSO_NL_CO_all <- extract_all_genes(DESeq2_DGE_result = DGE_result, coef_name = "skin_type_NL_vs_CO", df_gene_annotation = data_list_PSO_CO$gene_annotation)
+saveRDS(PSO_LS_CO_all, "data/rds/PSO/PSO_LS_CO_DGE_all.rds")
+saveRDS(PSO_NL_CO_all, "data/rds/PSO/PSO_NL_CO_DGE_all.rds")
 
 
-## DGE analysis - aLSvsNL_aLSvscLS_subject_matched
-index_ad <- which(data_list$metadata$group == "AD")
-data_list_AD <- data_list
-data_list_AD$metadata <- 
-  data_list$metadata[index_ad,] %>% 
+## DGE analysis - PSO_LSvsNL_subject_matched
+index_pso <- which(data_list$metadata$group == "PSO")
+data_list_PSO <- data_list
+data_list_PSO$metadata <- 
+  data_list$metadata[index_pso,] %>% 
   mutate(skin_type = skin_type %>% 
            stringr::str_replace("healthy", "CO")  %>% 
            stringr::str_replace("non-lesional", "NL") %>% 
-           stringr::str_replace("lesional", "aLS") %>% 
-           stringr::str_replace("chronic_lesion", "cLS") %>% 
-           factor(levels = c("NL", "cLS", "aLS"))) 
-data_list_AD$counttable <- data_list_AD$counttable[,index_ad]
+           stringr::str_replace("lesional", "LS") %>% 
+           factor(levels = c("NL", "LS"))) 
+data_list_PSO$counttable <- data_list_PSO$counttable[,index_pso]
 
-DGE_sub_match <- DESeqDataSetFromMatrix(countData = data_list_AD$counttable,
-                                        colData = data_list_AD$metadata,
+DGE_sub_match <- DESeqDataSetFromMatrix(countData = data_list_PSO$counttable,
+                                        colData = data_list_PSO$metadata,
                                         design = ~ subject_id + skin_type)
 DGE_sub_match_result <- DESeq(DGE_sub_match)
 resultsNames(DGE_sub_match_result)
-aLS_NL_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_sub_match_result, 
-                                                coef_name = "skin_type_aLS_vs_NL", 
-                                                df_gene_annotation = data_list_AD$gene_annotation)
-cLS_NL_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_sub_match_result, 
-                                                coef_name = "skin_type_cLS_vs_NL", 
-                                                df_gene_annotation = data_list_AD$gene_annotation)
-aLS_NL_all <- extract_all_genes(DESeq2_DGE_result = DGE_sub_match_result, coef_name = "skin_type_aLS_vs_NL", df_gene_annotation = data_list_AD$gene_annotation)
-cLS_NL_all <- extract_all_genes(DESeq2_DGE_result = DGE_sub_match_result, coef_name = "skin_type_cLS_vs_NL", df_gene_annotation = data_list_AD$gene_annotation)
+LS_NL_significant <- extract_significant_genes(DESeq2_DGE_result = DGE_sub_match_result, 
+                                                coef_name = "skin_type_LS_vs_NL", 
+                                                df_gene_annotation = data_list_PSO$gene_annotation)
 
-saveRDS(aLS_NL_significant, "data/rds/aLS_NL_DGE.rds")
-saveRDS(cLS_NL_significant, "data/rds/cLS_NL_DGE.rds")
-
-saveRDS(aLS_NL_all, "data/rds/aLS_NL_DGE_all.rds")
-saveRDS(cLS_NL_all, "data/rds/cLS_NL_DGE_all.rds")
+LS_NL_all <- extract_all_genes(DESeq2_DGE_result = DGE_sub_match_result, 
+                               coef_name = "skin_type_LS_vs_NL", 
+                               df_gene_annotation = data_list_PSO$gene_annotation)
+saveRDS(LS_NL_all, "data/rds/PSO/PSO_LS_NL_DGE_all.rds")
