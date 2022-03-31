@@ -8,9 +8,11 @@ library(tidySummarizedExperiment)
 library(tidybulk)
 library(purrr)
 register(MulticoreParam(future::availableCores()-4))
+
 ## Load data
 data_list <- 
   readRDS("data/rds/gse121212_list_raw.rds")
+
 ## SummarizedExperiement
 col_data <- 
   data_list$metadata %>% 
@@ -24,7 +26,29 @@ col_data <-
 se <- SummarizedExperiment(assays = list(counts = data_list$counttable %>% as.matrix),
                            colData = col_data)
 names(se) <- data_list$gene_annotation$gene_id
-se <- se[rownames(se) %>% stringr::str_detect("\\d{1,}P$|\\d{1,}P\\d{1,}$|\\.|-AS\\d{1}|-DT", negate = TRUE),] # gene cleaner
+
+g_clean <- 
+  rownames(se) %>% 
+  gprofiler2::gconvert() %>% 
+  filter(!description %>% str_detect("pseudogene")) %>% 
+  pull(input) %>% unique() 
+
+se <- se[g_clean,]
+se <- se[rownames(se) %>% stringr::str_detect("\\.|-AS\\d{1}|-DT", 
+                                              negate = TRUE),] # gene cleaner
+####### write out ############
+output_meta <- 
+  se %>% colData() %>% as_tibble()
+
+output_countable <- 
+  se %>% assay() %>% as_tibble(rownames = "gene_name") %>% 
+  rename_with(.fn = str_remove_all,
+              pattern = "/home/projects/ku_00015/data/gse121212_data/mapping/hisat2/|\\.sra\\.bam")
+
+readr::write_csv(output_meta, "data/tyl/gse121212_metadata.csv")
+readr::write_csv(output_countable, "data/tyl/gse121212_countable.csv")
+
+
 se <- se %>% keep_abundant(factor_of_interest = skin_type)
 DGE_design <- 
   tibble(

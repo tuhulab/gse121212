@@ -56,4 +56,26 @@ data_list$metadata <- tibble(SRR_ID =
                                as.character()) %>% left_join(sra_run_table_final) %>% 
   left_join(appendix_table2, by = c("subject_id" = "ID.pheno"))
 
+
 data_list %>% saveRDS("data/rds/gse121212_list_raw.rds")
+
+
+
+### GSE121212
+data_list <- readr::read_rds("data/rds/gse121212_list_raw.rds")
+
+library(SummarizedExperiment)
+library(tidybulk)
+library(tidySummarizedExperiment)
+library(stringr)
+
+se <- SummarizedExperiment(assays = list(counts = data_list$counttable),
+                           colData = data_list$metadata)
+names(se) <- data_list$gene_annotation$gene_id
+g_non_pseudo <- 
+  rownames(se) %>% 
+  gprofiler2::gconvert() %>% 
+  filter(!description %>% str_detect("pseudogene")) %>% 
+  pull(input) %>% unique()
+se_filterG <- se[g_non_pseudo,] %>% scale_abundance()
+saveRDS(se_filterG, "data/rds/se.rds")
