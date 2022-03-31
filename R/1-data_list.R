@@ -69,7 +69,7 @@ library(tidybulk)
 library(tidySummarizedExperiment)
 library(stringr)
 
-se <- SummarizedExperiment(assays = list(counts = data_list$counttable),
+se <- SummarizedExperiment(assays = list(counts = data_list$counttable %>% as.matrix),
                            colData = data_list$metadata)
 names(se) <- data_list$gene_annotation$gene_id
 g_non_pseudo <- 
@@ -77,5 +77,7 @@ g_non_pseudo <-
   gprofiler2::gconvert() %>% 
   filter(!description %>% str_detect("pseudogene")) %>% 
   pull(input) %>% unique()
-se_filterG <- se[g_non_pseudo,] %>% scale_abundance()
+se_filterG <- 
+  se[g_non_pseudo,] %>% 
+  scale_abundance()
 saveRDS(se_filterG, "data/rds/se.rds")
